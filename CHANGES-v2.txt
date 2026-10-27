@@ -1,0 +1,24 @@
+v2 changes (27 Oct 2026)
+- Brands page -> Blog (cms/Blog.html, nav label "Blog", sitemap, canonical). Blog engine in blog-src/ (see BLOG-HOWTO.txt). First post published.
+- Google Tag Manager and Analytics loader URLs fixed on all 288 pages (the mirror had rewritten them to local files that don't exist, so tracking would not have loaded).
+- Removed invalid hreflang tags (all 4 pointed to the same relative page) from all pages.
+- Added lang="en-SG" to all pages.
+- Fixed 11 pages with invalid JSON-LD (two schema objects stuck in one script) and trimmed padded values in all JSON-LD.
+- Per-page og:title / og:description / og:url (they were the homepage's on every page) and Twitter card tags.
+- One visible H1 on 286 pages (breadcrumb page name, styled unchanged); 72 hidden H1s demoted to H2.
+- Removed 2 broken googleadservices references and the dead products-2.html link.
+- robots.txt: blocks /blog-src/.
+Still open: SEO-REVIEW-titles-descriptions.csv (55 pages to rewrite), hidden white 0.1px text on 72 pages, no H1 on index.html and products.html, enquiry form needs a backend.
+
+v2.1 (27 Oct 2026, images)
+- 17 placeholder product images replaced with the AI-generated images (UploadedImg/Product/*.jpg), descriptive alt text, "Representative image" caption. No placeholder images remain.
+- 8 blog hero images are ready in UploadedImg/Blog/ (shim-plate-guide, bc6-bronze, c3604-brass-bar, copper-brass-bronze, lead-sheet-shielding, copper-fittings-guide, naval-brass-rod, bearing-bronze-c93200). Use them as `image:` in each post's front matter (e.g. image: UploadedImg/Blog/shim-plate-guide.jpg).
+- Check on-site: Brass Female Branch Tees uses a crop of a cross+tee image (re-generate a tee-only image if you want it cleaner); Copper Equal Tees image shows tees that look slightly unequal.
+
+v2.2 (27 Oct 2026, hidden text + Singapore rewrite)
+- Hidden white 0.1px text removed from all 72 pages. Headings are now visible in the page's intro box.
+- 13 keyword-stuffed Malaysia/Indonesia paragraphs replaced with short factual Singapore copy (no "leading supplier" or unverifiable claims). 21 pages with no intro text got a short Singapore intro.
+- All Malaysia/Indonesia targeting removed from titles, descriptions, og/twitter tags, meta keywords and JSON-LD (only the Enquiry country dropdown keeps Malaysia).
+- 54 titles/descriptions rewritten (30-60 / 110-160 characters). About 14 pages had descriptions belonging to a different page (e.g. Brass Union Tees, Lead Ingots, EDM Graphite): fixed.
+- Audit result: 0 titles/descriptions out of range, 0 duplicate titles, 0 broken links, 0 invalid JSON-LD.
+Still open: no H1 on index.html and products.html (design decision); enquiry form backend; live crawl diff; verify technical figures in copy against your catalogue.

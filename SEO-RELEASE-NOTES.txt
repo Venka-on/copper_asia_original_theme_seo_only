@@ -1,0 +1,7 @@
+COPPER.ASIA — ORIGINAL THEME + SEO ONLY
+
+This package is based on the supplied original copper.asia static site. The original CSS, JavaScript, images, layout, navigation, branding, and visible page content are preserved. The changes are SEO/technical cleanup only: page title and description metadata, missing canonical tags, missing image alt attributes, homepage Organization structured data (if absent), sitemap.xml, robots.txt, and a QA report. Captured 404/error-response HTML files were excluded from the release.
+
+This is not a guarantee of rankings or indexing. The sitemap keeps the original public URL pattern and assumes the hosting platform resolves those extensionless URLs to their corresponding mirrored .html files. Confirm that routing before submitting the sitemap.
+
+Before/after deployment: run a crawler and Lighthouse, validate structured data, verify the current bizSAFE certification wording, connect the enquiry form backend if needed, then submit sitemap.xml in Google Search Console and check indexing.

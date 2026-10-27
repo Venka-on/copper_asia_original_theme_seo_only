@@ -1,0 +1,14 @@
+ADD ONE BLOG POST PER WEEK (about 10 minutes)
+
+1. Copy blog-src/posts/_TEMPLATE.md to a new file, e.g. blog-src/posts/2026-11-03-shim-plate-guide.md
+2. Fill in the top block (title 30-60 characters, description 110-160 characters, slug, date, image) and write the post.
+   Link to 3-5 product pages with [anchor text](@products/Shim-Plates). Keep one main keyword per post.
+3. Run:  pip install markdown   (first time only)
+         python3 blog-src/build_blog.py
+   The script checks title/description length and the image path, then rebuilds cms/Blog.html,
+   cms/Blog/<slug>.html and the blog entries in sitemap.xml.
+4. Upload cms/Blog.html, the new cms/Blog/<slug>.html, sitemap.xml and any new image.
+   Do NOT upload the blog-src folder.
+5. In Google Search Console, use URL Inspection on the new post URL and click Request indexing.
+
+Topic ideas and target keywords: BLOG-CONTENT-CALENDAR.md

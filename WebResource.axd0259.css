@@ -1,0 +1,9 @@
+﻿/* Progress layer when a new control's image is loading */
+div.oaui_captchaprogresslayer 
+{
+    background-color:white;
+    cursor:text !important;
+    -moz-opacity:0.3;
+    filter:alpha(opacity:30);
+    opacity: 0.3;
+}
