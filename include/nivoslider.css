@@ -79,12 +79,10 @@
                 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
                 -moz-box-sizing: border-box;    /* Firefox, other Gecko */
                 box-sizing: border-box;         /* Opera/IE 8+ */
-                
                 text-align: center;
                 margin-top: 10%;
 }
-	margin-top: 220px;
-}
+
 .nivo-caption p {
 	padding:5px;
 	margin:0;
@@ -123,12 +121,12 @@
 	margin: auto;
 	left: 0;
 	right: 0;
-    width: 1000px;
+    width: 100%;
 	top: 45%;
   	position: absolute;
   	z-index:999999;
   	display: block;
-	
+	pointer-events: none;
 }
 
 .nivo-directionNav a {
@@ -137,17 +135,31 @@
 	display: block;
 	width: 38px;
 	height: 38px;
-	text-indent: -9999px;
 	border: 0;
 	position: absolute;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.55);
+	color: #fff;
+	font: bold 28px/34px Arial, sans-serif;
+	font-size: 0;
+	text-align: center;
+	text-indent: 0;
+	text-decoration: none;
+	pointer-events: auto;
 }
 .nivo-prevNav {
-	left:-50px;
-	background:url(../images/prev.html) no-repeat transparent;	
+	left: 10px;
 }
 .nivo-nextNav {
-	right:-50px;
-	background:url(../images/next.html) no-repeat transparent;	
+	right: 10px;
+}
+.nivo-prevNav::before {
+	content: "\2039";
+	font-size: 28px;
+}
+.nivo-nextNav::before {
+	content: "\203A";
+	font-size: 28px;
 }
 
 /* Control nav styles (e.g. 1,2,3...) */
@@ -173,28 +185,22 @@
 	background-position:0 -11px;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 736px) {
-	  .nivoSlider {
-		position: relative;
-		width: 100%; 
-		height: auto;
-		overflow: hidden;
-		background: #fff url(../images/loading.gif) no-repeat 50% 50%;
-	 }
-	 .nivo-caption {
-		 margin-top: 20px;
-		 line-height:13px;
-	 }
-	 .banner_cap01 {
-		 font-size:2.7vw;
-	 }
-	 .banner_cap02 {
-		 font-size: 3.7vw;
-	 }
-	 .banner_cap03 {
-		 font-size: 3.7vw;
-	 }
+@media (max-width: 767px) {
+    .nivo-caption {
+        top: 45%;
+        margin-top: 0;
+        padding: 0 12px;
+        line-height: 1.15;
+        transform: translateY(-50%);
+        text-shadow: 0 1px 5px rgba(255, 255, 255, 0.9);
+    }
 
-  
+    .banner_cap01 {
+        font-size: clamp(12px, 3.2vw, 20px);
+    }
+
+    .banner_cap02,
+    .banner_cap03 {
+        font-size: clamp(16px, 4.2vw, 26px);
+    }
+}

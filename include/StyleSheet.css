@@ -70,6 +70,7 @@ select:-moz-focusring {
     src: url('fonts/lato-reg-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/lato-reg-webfont.woff2') format('woff2'), url('fonts/lato-reg-webfont.woff') format('woff'), url('fonts/lato-reg-webfont.ttf') format('truetype'), url('fonts/lato-reg-webfont.svg#latoregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -78,6 +79,7 @@ select:-moz-focusring {
     src: url('fonts/lato-lig-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/lato-lig-webfont.woff2') format('woff2'), url('fonts/lato-lig-webfont.woff') format('woff'), url('fonts/lato-lig-webfont.ttf') format('truetype'), url('fonts/lato-lig-webfont.svg#latolight') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -86,6 +88,7 @@ select:-moz-focusring {
     src: url('fonts/lato-bol-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/lato-bol-webfont.woff2') format('woff2'), url('fonts/lato-bol-webfont.woff') format('woff'), url('fonts/lato-bol-webfont.ttf') format('truetype'), url('fonts/lato-bol-webfont.svg#latobold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -94,6 +97,7 @@ select:-moz-focusring {
     src: url('fonts/lato-bla-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/lato-bla-webfont.woff2') format('woff2'), url('fonts/lato-bla-webfont.woff') format('woff'), url('fonts/lato-bla-webfont.ttf') format('truetype'), url('fonts/lato-bla-webfont.svg#latoblack') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* <a> link with class */
@@ -1735,6 +1739,24 @@ a.sendEnquiry, a.sendEnquiry:link, a.sendEnquiry:visited, a.sendEnquiry:active {
         min-width: 0;
     }
 
+    header .header_wrapper {
+        position: relative;
+        height: 74px;
+    }
+
+    .logo02 {
+        top: 50%;
+        left: 50%;
+        width: 180px;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo02 img {
+        max-width: 100%;
+        height: auto;
+    }
+
     ul#navmenu-h li:nth-child(4) {
         margin-right: 0;
     }
@@ -1768,10 +1790,56 @@ a.sendEnquiry, a.sendEnquiry:link, a.sendEnquiry:visited, a.sendEnquiry:active {
         max-width: 80%;
     }
 
+    .toggle {
+        top: 13px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
+    }
+
     #maincontent,
     #ctl00_maincontent {
         padding-right: 15px;
         padding-left: 15px;
+    }
+
+    #ctl00_maincontent.homepage {
+        padding-top: 24px !important;
+    }
+
+    .home_intro {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .home_intro01 {
+        font-size: 21px;
+    }
+
+    .home_intro02 {
+        font-size: 38px;
+    }
+
+    .logo-push {
+        margin-right: 0;
+    }
+
+    .brands .col-xs-3 {
+        display: block;
+        float: none !important;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 12px;
+    }
+
+    .brands .footer_wrapper .row .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands .col-xs-3 img {
+        max-width: 100%;
+        height: auto;
     }
 
     .intro_div {
