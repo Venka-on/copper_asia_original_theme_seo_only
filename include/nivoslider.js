@@ -75,7 +75,9 @@
         
         // Set first background
         var sliderImg = $('<img/>').addClass('nivo-main-image');
-        sliderImg.attr('src', vars.currentImage.attr('src')).show();
+        sliderImg.attr('src', vars.currentImage.attr('src'))
+            .attr('alt', vars.currentImage.attr('alt') || '')
+            .show();
         slider.append(sliderImg);
 
         // Detect Window Resize
@@ -187,7 +189,8 @@
         
         // Event when Animation finishes
         slider.bind('nivo:animFinished', function(){
-            sliderImg.attr('src', vars.currentImage.attr('src'));
+            sliderImg.attr('src', vars.currentImage.attr('src'))
+                .attr('alt', vars.currentImage.attr('alt') || '');
             vars.running = false; 
             // Hide child links
             $(kids).each(function(){
