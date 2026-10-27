@@ -108,7 +108,13 @@
             var nivoCaption = $('.nivo-caption', slider);
             if(vars.currentImage.attr('title') != '' && vars.currentImage.attr('title') != undefined){
                 var title = vars.currentImage.attr('title');
-                if(title.substr(0,1) == '#') title = $(title).html();   
+                if(title.substr(0,1) == '#') {
+                    var captionTemplate = $(title);
+                    title = captionTemplate.html();
+                    if(captionTemplate.data('heading')) {
+                        title = '<h1 class="homepage-banner-heading">' + title + '</h1>';
+                    }
+                }
 
                 if(nivoCaption.css('display') == 'block'){
                     setTimeout(function(){

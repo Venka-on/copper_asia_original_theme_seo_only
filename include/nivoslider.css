@@ -94,6 +94,15 @@
     display:none;
 }
 
+.homepage-banner-heading {
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    text-transform: none;
+}
+
 .banner_cap01 {
 	color: #474747;
 	font: bold 1.77vw 'lato', Arial, Helvetica, sans-serif;
