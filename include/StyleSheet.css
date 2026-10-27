@@ -1036,7 +1036,7 @@ footer {
     }
 
 
-@media (max-width:767px) {
+@media (max-width:1000px) {
     nav {
         width: 100%;
         z-index: 5;
@@ -1729,3 +1729,65 @@ a.sendEnquiry, a.sendEnquiry:link, a.sendEnquiry:visited, a.sendEnquiry:active {
 .blog-post th,.blog-post td{border:1px solid #ccc;padding:6px 10px;text-align:left}
 .blog-post p,.blog-post li{line-height:1.6}
 .blog-related{margin-top:30px;padding-top:12px;border-top:1px solid #ddd}
+
+@media (max-width:1000px) {
+    #banner {
+        min-width: 0;
+    }
+
+    ul#navmenu-h li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .nav_wrapper {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .header_wrapper,
+    .nav_wrapper,
+    .footer_wrapper,
+    #maincontent,
+    #ctl00_maincontent,
+    #maincontent.pc_version,
+    #ctl00_maincontent.pc_version {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #ctl00_maincontent {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .nav_wrapper {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #maincontent,
+    #ctl00_maincontent {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .intro_div {
+        height: auto !important;
+        max-height: none;
+    }
+
+    .prodimg {
+        display: block;
+        width: 218px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .prodimg img {
+        max-width: 100%;
+        height: auto;
+    }
+}
