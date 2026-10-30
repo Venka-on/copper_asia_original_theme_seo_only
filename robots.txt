@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /ScriptResource.axd
-Disallow: /WebResource.axd
-Disallow: /gtm.html
+
 Sitemap: https://copper.asia/sitemap.xml
-Disallow: /blog-src/
